@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front Desk System at a Clinic</title>
+    <style>
+        /* General body styles */
+        body {
+            background-color: lightseagreen;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f170fa;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-right: 10px;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Headings */
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: #007bbd;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #00aaff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border-radius: 100px;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #007bbd;
+            border-radius: 100px;
+        }
+
+        .btn-secondary {
+            background-color: #15d8d2;
+            border: none;
+            padding: 10px 40px; 
+            font-size: 16px;
+            color: white;
+            border-radius: 50px; 
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #c0f72a;
+        }
+
+        .btn-emergency {
+            background-color: #ff4d4d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-emergency:hover {
+            background-color: #cc0000;
+        }
+
+        /* Container styles */
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* List group styles */
+        .list-group-item {
+            font-size: 16px;
+        }
+
+        /* Footer or additional spacing */
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Front Desk System at a Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/book-appointment/">Book Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/queue-status/">View Queue Status</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container mt-5">
+        <h1>Welcome to Front Desk System at a Clinic</h1>
+        <p>Efficiently manage patient queues and appointments with our system.</p>
+        <a class="btn btn-primary" href="/book-appointment/">Book an Appointment</a>
+        <hr>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Queue Details</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>Total Patients in Queue:</strong> {{ total_patients }}
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Currently Attending:</strong> {{ currently_attending }}
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Next in Queue:</strong> {{ next_in_queue }}
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Estimated Waiting Time:</strong> {{ estimated_waiting_time }}
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Additional Information</h3>
+                <p>
+                    <strong>Hospital Timings:</strong> 9:00 AM - 5:00 PM<br>
+                    <strong>Emergency Contact:</strong> +91-9876543210<br>
+                    <strong>Address:</strong> 123 Main Street, City, State
+                </p>
+                <a href="/queue-status/" class="btn btn-secondary">View Full Queue</a>
+                <br>
+                <!-- Emergency Button -->
+                <a href="/emergency-treatment/" class="btn-emergency">Emergency Treatment</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
