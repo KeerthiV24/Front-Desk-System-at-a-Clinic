@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hospital Queue Django Project
 
 This project is a Django-based hospital queue management system.
@@ -24,3 +25,7 @@ This project is a Django-based hospital queue management system.
 ## Notes
 
 - Customize templates and static files as needed.
+=======
+# Front-Desk-System-at-a-Clinic
+This project is a Django-based web application designed to manage the front desk operations of a clinic efficiently. It provides features such as patient registration, appointment booking, queue management, and real-time status updates. The system aims to streamline the workflow, reduce waiting times, and improve the overall patient experience.
+>>>>>>> 328d0b2b7a48e99a6bf1cdeeb6085384c525a483
