@@ -2,6 +2,19 @@
 
 #output
 
+<img width="1803" height="844" alt="Screenshot (219)" src="https://github.com/user-attachments/assets/c6b9a9a0-d62d-41fc-b04b-8cd9c526d3c2" />
+
+
+<img width="1858" height="875" alt="Screenshot (220)" src="https://github.com/user-attachments/assets/1a3064d0-edec-4c04-8ccf-e2f4dc8b56b3" />
+
+<img width="1920" height="835" alt="Screenshot (221)" src="https://github.com/user-attachments/assets/5aeed9e6-7fc0-4db8-bb80-d772b9100587" />
+
+<img width="1920" height="858" alt="Screenshot (222)" src="https://github.com/user-attachments/assets/3296cf56-9f17-4b9e-99ab-3016a154569d" />
+
+<img width="1889" height="851" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/e7e0fcc3-5019-48ea-a50c-f59631c7151d" />
+
+<img width="1920" height="1080" alt="Screenshot (224)" src="https://github.com/user-attachments/assets/de453912-f6c0-4475-be14-b180ea1aaf8b" />
+
 
 # Hospital Queue Django Project
 
