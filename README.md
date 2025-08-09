@@ -1,3 +1,9 @@
+# Snapshots of the project
+
+#output
+<img width="1920" height="1080" alt="Screenshot (224)" src="https://github.com/user-attachments/assets/7f6eb688-54e7-4539-81a7-482f5a4343f5" />
+
+
 <<<<<<< HEAD
 # Hospital Queue Django Project
 
