@@ -13,7 +13,7 @@
 
 <img width="1889" height="851" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/e7e0fcc3-5019-48ea-a50c-f59631c7151d" />
 
-<img width="1920" height="1080" alt="Screenshot (224)" src="https://github.com/user-attachments/assets/de453912-f6c0-4475-be14-b180ea1aaf8b" />
+
 
 
 # Hospital Queue Django Project
